@@ -58,6 +58,26 @@ ul{
     font-style: normal;
 }
 
+@media (max-width: 1066px) {
+    .nav {
+      gap: 40px; 
+    }
+    
+    .nav .list,
+    .address .list {
+      gap: 20px; 
+    }
+
+    .address .list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-link {
+      font-size: 14px;
+    }
+  }
+
 /***********************************************************/
 
 /*FOOTER*/
@@ -71,7 +91,7 @@ ul{
 .footer .container{
     display: flex;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
     gap: 120px;
     display: flex;
     max-width: 1440px;
@@ -171,6 +191,39 @@ ul{
 .icon-social {
     fill: white;
 }
+
+@media (max-width: 1066px) {
+    .footer {
+      height: 456px;
+      width: 100%;
+    }
+  
+    .footer .container {
+      padding: 40px 20px;
+      max-width: 768px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      gap: 72px 24px;
+    }
+  
+    .sub-form {
+      width: 100%;
+      max-width: 453px;
+      margin: 0 auto;
+    }
+  
+    .form {
+      display: flex;
+      gap: 24px;
+    }
+  
+    .sub-subm {
+      padding: 8px 24px;
+    }
+ }
+
 /************************************************************************/
 
 
@@ -259,6 +312,41 @@ ul{
     align-content: left;
 }
 
+@media (max-width: 1066px){
+
+    .benefit-img{
+        display: none;
+    }
+
+    .benefits .container{
+        padding-top: 50px;
+        width: 100%;
+        max-width: 736px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 20 0;
+    }
+
+    .benefits-list{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        padding: 0;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .benefits-list .h-two{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.02em; /* 2% = 0.02em */
+        text-align: left;
+    }
+}
+
 /***************************WHAT ARE WE DOING SECTION********************************/
 .work .container{
     padding-top: 100px;
@@ -286,6 +374,12 @@ ul{
     justify-content: center;
     align-content: center;
     margin: 0 auto;
+}
+
+@media (max-width: 1066px){
+    .work .container{
+        display: none;
+    }
 }
 
 /***************************TEAM MEMBERS*********************************/
@@ -316,7 +410,7 @@ ul{
 .member{
     background-color: white;
     height: 428px;
-    width: 264px;
+    max-width: 264px;
 }
 
 .team-members{
@@ -331,6 +425,8 @@ ul{
     display: flex;
     gap: 24px;
     justify-content: center;
+    align-content: center;
+    max-width: 264px;
     padding: 0;
     margin: 0 auto;
 }
@@ -353,11 +449,31 @@ ul{
 }
 
 .desc-member{
-    width: 232px;
-    height: 104px;
+    width: 264px;
+    height: 168px;
     gap: 8px;
     align-content: center;
     text-align: center;
+}
+
+@media (max-width: 1066px){
+    .team-members{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        padding: 0;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .team .container{
+        max-width: 552px;
+        width: 100%;
+        align-content: center; 
+        justify-content: center;
+        margin: 0 auto;
+        padding: 120px 0;
+    }
 }
 
 /************************CUSTOMERS**************************/
@@ -422,6 +538,29 @@ ul{
 }
 .customer .icon {
     fill: currentColor;
+}
+
+@media (max-width: 1269px) {
+    .customers-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px; 
+        width: 100%;
+        height: auto; 
+        padding: 0 15px;
+    }
+
+    .customer {
+        width: 100%;
+        height: 88px;
+        margin: 0 auto;
+    }
+
+    .customer .link {
+        width: 100%;
+        max-width: 190px;
+        margin: 0 auto;
+    }
 }
 
 
