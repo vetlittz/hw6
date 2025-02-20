@@ -456,7 +456,7 @@ ul{
     text-align: center;
 }
 
-@media (max-width: 1066px){
+@media (max-width: 1210px){
     .team-members{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
