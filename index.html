@@ -9,9 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -355,56 +353,6 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button type="button" class="close-button" data-modal-close>
-                <svg class="icon-close" width="8" height="8">
-                    <use href="./images/icons.svg#icon-close-black-18dp"></use>
-                </svg>
-            </button>
-            <p class="text-order">Leave your contacts and we will call you back</p>
-            <form class="modal-form">
-                <div class="sub-input">
-                    <label for="user-name" class="user">Name</label>
-                    <div class="input-cont">
-                        <input type="text" name="user-name" id="user-name" class="modal-input">
-                        <svg class="modal-icon" height="24px" width="24px">
-                            <use href="./images/icons.svg#person"></use>
-                        </svg>
-                    </div>
-                    <div class="sub-input">
-                        <label for="user-name" class="user">Phone</label>
-                        <div class="inpunt-cont">
-                            <input type="tel" name="phone" id="phone" class="modal-input">
-                            <svg class="modal-icon" height="24px" width="24px">
-                                <use href="./images/icons.svg#phone"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="sub-input">
-                        <label for="user-email" class="user">Email</label>
-                        <div class="input-cont">
-                            <input type="text" name="user-email" id="user-email" class="modal-input">
-                            <svg class="modal-icon" height="24px" width="24px">
-                                <use href="./images/icons.svg#email"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="sub-comment">
-                        <label for="user-comment" class="person">Comment</label>
-                        <textarea name="user-comment" id="user-comment" class="comment-box"
-                            placeholder="Text input"></textarea>
-                    </div>
-                    <div class="checkbox">
-                        <input id="user-privacy" type="checkbox" name="user-privacy" value="true"
-                            class="visually-hidden" />
-                        <label for="user-privacy" class="box">I accept the terms and conditions of the<a href=""
-                                class="link-privacy"> Privacy Policy</a></label>
-                    </div>
-                    <button type="submit" class="buto-send">Send</button>
-            </form>
-        </div>
-    </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle menu-close js-close-menu">
             <svg class="icon icon-close" width="8" height="8">
@@ -413,8 +361,8 @@
         </button>
         <nav class="nav-menu">
             <ul class="mobile-menu">
-                <li><a href="" class="link link-now">Studio</a></li>
-                <li><a href="" class="link">Portfolio</a></li>
+                <li><a href="./index.html" class="link link-now">Studio</a></li>
+                <li><a href="./portfolio.html" class="link">Portfolio</a></li>
                 <li><a href="" class="link">Contacts</a></li>
             </ul>
         </nav>
@@ -458,6 +406,65 @@
                 </a>
             </li>
         </ul>
+    </div>
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-button" data-modal-close>
+                <svg class="icon-close" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black-18dp"></use>
+                </svg>
+            </button>
+            <p class="text-order">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <div class="sub-input">
+                    <label for="user-name" class="user">Name</label>
+                    <div class="input-cont">
+                        <input type="text" name="user-name" id="user-name" class="modal-input">
+                        <svg class="modal-icon" height="24px" width="24px">
+                            <use href="./images/icons.svg#person"></use>
+                        </svg>
+                    </div>
+                </div> 
+            
+                <div class="sub-input">
+                    <label for="phone" class="user">Phone</label>
+                    <div class="input-cont"> 
+                        <input type="tel" name="phone" id="phone" class="modal-input">
+                        <svg class="modal-icon" height="24px" width="24px">
+                            <use href="./images/icons.svg#phone"></use>
+                        </svg>
+                    </div>
+                </div>
+            
+                <div class="sub-input">
+                    <label for="user-email" class="user">Email</label>
+                    <div class="input-cont">
+                        <input type="email" name="user-email" id="user-email" class="modal-input">
+                        <svg class="modal-icon" height="24px" width="24px">
+                            <use href="./images/icons.svg#email"></use>
+                        </svg>
+                    </div>
+                </div>
+            
+                <div class="sub-comment">
+                    <label for="user-comment" class="person">Comment</label>
+                    <textarea name="user-comment" id="user-comment" class="comment-box" 
+                        placeholder="Text input"></textarea>
+                </div>
+            
+                <div class="checkbox">
+                    <input id="user-privacy" type="checkbox" name="user-privacy" value="true" 
+                        class="visually-hidden" />
+                    <label for="user-privacy" class="box">
+                        I accept the terms and conditions of the
+                        <a href="" class="link-privacy">Privacy Policy</a>
+                    </label>
+                </div>
+            
+                <button type="submit" class="buto-send">Send</button>
+            </form>
+        </div>
     </div>
     <script
         defer
